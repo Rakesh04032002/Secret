@@ -81,8 +81,8 @@ app.post("/login", function (req, res) {
 //Now to process the .env file content we have to use process.env.the_content_Name like in line no 14 
 //as we moved our secret to .env file so we can not use the plugin in like in 28 line for that we have to modified plugin like line no 29
 
+const PORT=process.env.PORT||3000;
 
-
-app.listen(3000, function () {
+app.listen(PORT, function () {
     console.log("server is running on port no 3000");
 })
